@@ -1,0 +1,24 @@
+.core-concept {
+    color: rgb(223, 223, 223);
+    list-style: none;
+
+    width: 9rem;
+
+    display: inline-block;
+}
+
+.core-concept__image {
+    width: 6rem;
+    height: 6rem;
+
+    margin: 0;
+}
+
+.core-concept__title {
+    margin: 0 0 1rem 0;
+}
+
+.core-concept__description {
+    margin: 0;
+    font-size: .9rem;
+}

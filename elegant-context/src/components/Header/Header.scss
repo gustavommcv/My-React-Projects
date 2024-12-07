@@ -1,0 +1,45 @@
+:root {
+    --color-header-title: #EDBF68;
+    --color-header-button: #EDBF68;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: 3rem 8rem;
+
+    &__container {
+        display: flex;
+        gap: 1.2rem;
+
+        align-items: center;
+    }
+
+    &__logo {
+        height: 5rem;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        color: var(--color-header-title);
+
+        font-size: 2.5rem;
+    }
+
+    &__button {
+        font-size: 1.2rem;
+        padding: .5rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        
+        background-color: var(--color-header-button);
+
+        cursor: pointer;
+
+        &:hover {
+            background-color: #e2ad4b;
+        }
+    }
+}

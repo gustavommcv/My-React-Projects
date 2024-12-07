@@ -1,0 +1,20 @@
+import logo from '../../assets/no-projects.png';
+
+import { useContext } from 'react';
+import Context from '../../context/context';
+
+function Home() {
+
+    const { changePage } = useContext(Context);
+
+    return  <div className='flex flex-col m-auto items-center h-fit py-16 px-8 mt-8'>
+    <img src={logo} alt="Logo" className='w-16 h-16 object-cover mb-6' />
+
+    <h2 className='text-xl text-stone-500 font-semibold mb-4'>No Project Selected</h2>
+    <p className='text-stone-400 mb-8'>Select a project or get started with a new one</p>
+
+    <button onClick={() => changePage('Form')} className='border-transparent bg-stone-700 px-4 py-2 rounded-md text-stone-400 hover:bg-stone-600 hover:text-stone-100'>Create new project</button>
+</div>
+}
+
+export default Home;

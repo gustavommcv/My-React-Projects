@@ -1,0 +1,17 @@
+:root {
+    --color-background-body: #31230C;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    max-width: 130rem;
+    margin: 0 auto;
+}
+
+body {
+    background-color: var(--color-background-body);
+}

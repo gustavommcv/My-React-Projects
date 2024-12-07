@@ -1,0 +1,59 @@
+.game-over {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+
+    background-color: #282618ea;
+
+    width: 100%;
+    height: 100%;
+
+    border-radius: 5px;
+
+    padding: 3rem;
+
+}
+
+.game-over__title {
+    font-size: 3rem;
+    color: #FCD256;
+}
+
+.game-over__player {
+    color: #DDDAC3;
+
+    font-size: 2rem;
+}
+
+.game-over__button {
+    color: #FCD256;
+    border: 2px solid #FCD256;
+    border-radius: 2px;
+    cursor: pointer;
+
+    padding: .5rem .8rem;
+
+    font-size: 1.2rem;
+
+    background-color: transparent;
+
+    transition: all .3s;
+
+    box-shadow: #FCD256 0px 0px 5px;
+}
+
+.game-over__button:hover {
+    transform: scale(120%);
+
+    background-color: #FCD256;
+    color: #282618ea;
+
+    box-shadow: #FCD256 0px 0px 8px;
+}

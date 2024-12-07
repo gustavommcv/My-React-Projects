@@ -1,0 +1,33 @@
+section div {
+    max-width: 50rem;
+    margin: 0 auto;
+    color: #A18ABA;
+}
+
+section div h2 {
+    margin-bottom: 2rem;
+}
+
+menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    gap: .7rem;
+
+    margin-bottom: 1rem;
+}
+
+#tab-content {
+    color: #ffffffb7;
+    background-color: #2F1D43;
+    padding: 1.5rem;
+    max-width: 47rem;
+
+    border-radius: 5px;
+}
+
+#tab-content h3 {
+    margin: 0 0 1rem 0;
+}

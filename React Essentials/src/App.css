@@ -1,0 +1,12 @@
+.body {
+    height: 100vh;
+    width: 100vw;
+
+    background: radial-gradient(var(--color-background-light), var(--color-background-dark));
+
+    display: inline-block;
+}
+
+section {
+    padding: 0 1rem;
+}

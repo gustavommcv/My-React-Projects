@@ -1,0 +1,26 @@
+.button--example {
+    color: #EBE7EF;
+    background-color: transparent;
+    border: none;
+
+    padding: .5rem 1rem;
+    border-radius: 5px;
+
+    font-size: 1rem;
+    
+    transition: all .3s;
+
+    cursor: pointer;
+}
+
+.button--example:hover {
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.active {
+    background-color: blueviolet;
+}
+
+.active:hover {
+    background-color: blueviolet;
+}
