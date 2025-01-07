@@ -1,0 +1,56 @@
+.configure-counter {
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin-top: 2.5rem;
+
+    gap: 1rem;
+
+    color: #88DBD6;
+
+    &__paragraph {
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    &__form {
+        display: flex;
+        gap: 1rem;
+    }
+
+    &__input {
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        -moz-appearance: textfield;
+
+        outline: none;
+        text-align: center;
+
+        border: 1px solid #75bbb6;
+        color: #75bbb6;
+        background: none;
+
+        font-size: 1rem;
+        padding: .6rem 1rem;
+        width: 2rem;
+
+        border-radius: 5px;
+
+        background-color: #182432;
+    }
+
+    &__button {
+        border: none;
+        background-color: transparent;
+        color: #88DBD6;
+        cursor: pointer;
+
+        &:hover {
+            color: #75bbb6;
+        }
+    }
+}

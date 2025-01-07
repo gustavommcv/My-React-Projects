@@ -1,0 +1,21 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 2rem;
+    gap: .5rem;
+
+    &__logo {
+        width: 8rem;
+        height: 8rem;
+        object-fit: contain;
+    }
+
+    &__title {
+        color: #87A7A4;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+}

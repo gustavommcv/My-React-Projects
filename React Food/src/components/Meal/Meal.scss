@@ -1,0 +1,67 @@
+.meal {
+
+    display: flex;
+    flex-direction: column;
+    background-color: #1D1A16;
+    max-width: 25rem;
+    min-height: 38rem;
+    align-items: center;
+
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    border-radius: 20px;
+
+    &__logo {
+        width: 25rem;
+        object-fit: cover;
+        height: 20rem;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__price {
+        background-color: #312C1D;
+        color: #FFC404;
+
+        width: fit-content;
+
+        padding: .5rem 2rem;
+
+        border-radius: 5px;
+
+        margin: 0rem 0rem 1rem 0rem;
+
+        & p {
+            margin: 0;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        margin: 0 2rem;
+
+        min-height: 6rem;
+    }
+
+    &__button {
+        background-color: #FFC404;
+        border: none;
+        padding: .5rem 2rem;
+        max-width: fit-content;
+
+        font-size: 1.1rem;
+        font-weight: 300; 
+
+        color: rgb(66, 66, 66);
+
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #fda400;
+        }
+    }
+}

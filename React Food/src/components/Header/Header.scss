@@ -1,0 +1,51 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #FFC404;
+
+    padding: 2.5rem;
+    
+    &__left-container {
+        display: flex;
+        align-items: center;
+
+        margin-left: 2rem;
+    }
+
+    &__logo {
+        object-fit: cover;
+
+        width: 4rem;
+        height: 4rem;
+
+        border-radius: 40rem;
+
+        border: 2px solid #FFC404;
+    }
+
+    &__title {
+        text-transform: uppercase;
+
+        margin-left: 1rem;
+
+        letter-spacing: 2px;
+
+        font-weight: 550;
+    }
+
+    &__cart {
+        font-size: 1.5rem;
+        color: #FFC404;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+
+        margin-right: 2rem;
+
+        &:hover {
+            color: #fda400;
+        }
+    }
+
+}

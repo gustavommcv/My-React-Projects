@@ -1,0 +1,13 @@
+.meals-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    margin: 0 auto;
+    padding: 0 2rem;
+
+    max-width: 90rem;
+
+    gap: 1rem;
+}
