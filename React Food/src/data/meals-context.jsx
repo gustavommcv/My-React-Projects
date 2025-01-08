@@ -10,7 +10,8 @@ const mealsContext = createContext({
     getTotalValue: () => {},
     removeFromCart: () => {},
     openModalForm: () => {},
-    closeModalForm: () => {}
+    closeModalForm: () => {},
+    submitOrder: () => {}
 });
 
 export default mealsContext;

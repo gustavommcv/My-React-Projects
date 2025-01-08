@@ -74,7 +74,6 @@ export default function MealContextProvider({ children }) {
         return cart.reduce((total, item) => total + item.quantity, 0);
     }
     
-    
     function openModal() {
         modal.current.showModal();
     }
@@ -92,6 +91,34 @@ export default function MealContextProvider({ children }) {
         modalForm.current.close();
     }
 
+    async function submitOrder(customer) {
+        try {
+            const response = await axios.post('http://localhost:3000/orders', {
+                order: {
+                    items: cart.map(item => ({
+                        id: item.meal.id,
+                        name: item.meal.name,
+                        price: item.meal.price,
+                        description: item.meal.description,
+                        image: item.meal.image,
+                        quantity: item.quantity
+                    })),
+                    customer: {
+                        name: customer.name,
+                        email: customer.email,
+                        street: customer.street,
+                        "postal-code": customer.postalCode,
+                        city: customer.city
+                    }
+                }
+            });
+    
+            console.log('Order submitted successfully:', response.data);
+        } catch (error) {
+            console.error('Error submitting order:', error);
+        }
+    }   
+
     const ctxValue = {
         meals: data,
         cart,
@@ -102,7 +129,8 @@ export default function MealContextProvider({ children }) {
         getTotalValue,
         removeFromCart,
         openModalForm,
-        closeModalForm
+        closeModalForm,
+        submitOrder
     }
 
     return <mealsContext.Provider value={ctxValue}>
